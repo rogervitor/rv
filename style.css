@@ -1,7 +1,5 @@
 @import
-url(‘https://fonts.googleapis.com/css2?
-family=Nunito+Sans:ital,opsz,
-wght@0,6..12,200..1000;1,6..12,200..1000&display=swap’);
+url(‘https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap’);
 :root {
     --bg-color: #222831;
     --primary-color: #DDDDDD;
@@ -52,25 +50,8 @@ body {
                     span {
                         font-weight: bold;
                         color: var(--secundary-color);
-                        }paragrafo.innerHTML = `Você sabia que o mundo tem
-                        <span>${dados.total_pessoas_mundo}</span> de pessoas e
-                        que aproximadamente <span>${dados.total_pessoas_
-                        conectadas}</span> estão conectadas em alguma rede
-                        social e passam em media
+                        }
                         
-                        <span>${dados.tempo_medio}</span> horas conectadas.`
-                        const dados = await res.json()
-                        console.log(dados);
-                        const paragrafo = document.createElement(‘p’)
-                        paragrafo.classList.add(‘graficos-container__texto’)
-                        paragrafo.innerHTML = `Você sabia que o mundo tem
-                        <span>${dados.total_pessoas_mundo}</span> de pessoas
-                        e que aproximadamente <span>${dados.total_pessoas_
-                        conectadas}</span> estão conectadas em alguma rede
-                        social e passam em média <span>${dados.tempo_medio}</
-                        span> horas conectadas.`
-                        console.log(paragrafo)const res = await fetch(url)
-                        const dados = await res.json()
                         const pessoasConectadas = (dados.total_pessoas_ conectadas) / 1e9
                         const paragrafo = document.createElement(‘p’)
                         
